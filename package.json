@@ -6,7 +6,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "kill-port": "npx kill-port 8000"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",

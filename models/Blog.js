@@ -142,7 +142,6 @@ blogSchema.index({
   content: "text",
   tags: "text",
 });
-blogSchema.index({ slug: 1 }, { unique: true });
 blogSchema.index({ category: 1, status: 1, featured: 1 });
 blogSchema.index({ date: -1 });
 blogSchema.index({ views: -1 });
