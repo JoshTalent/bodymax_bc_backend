@@ -6,6 +6,7 @@ import GalleryRoutes from "./routes/GalleryRoutes.js";
 import BlogRoutes from "./routes/BlogRoutes.js";
 import MessageRoutes from "./routes/MessageRoutes.js";
 import BoxerRoutes from "./routes/BoxerRoutes.js";
+import EventRoutes from "./routes/EventRoutes.js";
 import connectDB from "./config/db.js";
 
 // Load environment variables FIRST
@@ -29,6 +30,7 @@ app.use("/api/gallery", GalleryRoutes);
 app.use("/api/blog", BlogRoutes);
 app.use("/api/messages", MessageRoutes);
 app.use("/api/boxers", BoxerRoutes);
+app.use("/api/events", EventRoutes);
 
 
 // Error handling middleware
